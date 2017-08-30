@@ -1,0 +1,231 @@
+body{
+	margin:0;
+	padding: 0;
+	border: 0;
+}
+.forOwl{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1200px;
+	height: 800px;
+	position: relative;
+}
+.owlBase{
+	background-color: #c79560;
+	border-radius: 50%;
+	position: absolute;	
+}
+.owlLighter{
+	background-color: 	
+}
+.owlHead{
+	width: 35%;
+	height: 40%;
+	top: 15%;left: 34%;
+	z-index: 2;
+	
+}
+.owlFace{
+	width: 15%; 
+	height: 22%;
+	border-radius: 50%;
+	background-color: white;
+	position: absolute;
+	z-index: 7;
+}
+.owlFace--left{
+	top: 25%; left: 39%;
+	box-shadow: -7px -7px;
+	z-index: 6;	
+}
+.owlFace-right{
+	top: 25%; left: 50%;
+	box-shadow: 7px -7px;
+}
+.eye{
+	width: 10%;
+	height: 15%;
+	border-radius: 50%;
+	background-color: #8c633a;	
+	position: absolute;
+	top:26%;
+	z-index: 7;
+	overflow: hidden;
+}
+.eyelid{
+	width:	100%;
+	height: 100%;
+	background-color: #8c633a;
+	position: absolute;
+	-webkit-transform: translateY(-300px);
+	-webkit-animation: closeEyes 2s linear alternate infinite;
+	z-index: 100;
+}
+.eyeLeft{
+	left: 41% ;	
+}
+.eyeRight{
+	left: 53% ;
+}
+.eyespark{
+	width: 20%;
+	height: 20%;
+	border-radius: 50%;
+	background-color: white;
+	position:absolute;
+	top: 20%;left: 25%;	
+}
+.eye:before{
+	content:'';
+	width: 85%;
+	height: 85%;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	top: 8%; left:7%;
+	
+}
+.beak{
+	width: 0;
+	height: 0;
+	border-right: 50px solid transparent;
+	position:absolute;	
+	top: 40%;
+	z-index: 8;
+}
+.beakLeft{
+	border-top: 50px solid #EFBA03;
+	-webkit-transform: rotate(-45deg);
+	left: 50%;	
+}
+.beakRight{
+	border-top: 50px solid #C38808;
+	-webkit-transform: rotate(135deg);
+	left: 50%;	
+}
+.eyebrow{
+	width: 20%;
+	height: 10%;
+	border-radius: 50%;
+	position: absolute;
+	z-index: 10;
+	top: 18%;
+
+}
+.eyebrowLeft{
+	box-shadow: 35px -25px #8c633a;
+	left: 28%;
+	-webkit-transform: rotate(5deg);
+}
+.eyebrowRight{
+	box-shadow: -35px -25px #8c633a;
+	left: 56%;
+	-webkit-transform: rotate(-5deg);
+}
+
+.owlBody{
+	width: 33%;
+	height: 50%;
+	top: 30%;left: 35%;
+}
+.owlStomach{
+	width: 25%;
+	height: 38%;
+	border-radius: 50%;
+	background-color: white;
+	position:absolute;
+	z-index: 2;	
+	top: 35%;left: 39%;
+}
+.stomachTriagle{
+	width: 10%;
+	height: 10%;
+	background-color: #8c633a;
+	position: absolute;
+	top: 40%; left: 10%;
+	-webkit-transform: rotate(45deg);
+	box-shadow: 50px -50px #8c633a, 100px -100px #8c633a, 150px -150px #8c633a, 50px 0px #8c633a, 100px -50px #8c633a, 150px -100px #8c633a;
+
+}
+	
+.foot{
+	width: 10%;
+	height: 10%;
+	position: absolute;
+	top: 72%;
+}
+.leftFoot{
+	left: 40%	
+}
+.rightFoot{
+	left: 57%;
+}
+.finger{
+	width: 25%;
+	height: 100%;
+	border-radius: 50%;
+	background-color: #EFBA03;	
+	display: inline-block;
+	margin-left: -8px;
+	border-left: 1px solid #8c633a;
+}
+
+.wing{
+	width: 30%;
+	height: 20%;
+	position: relative;
+}
+.leftWing{
+	top: 41%;
+	left: 15%;
+	z-index: -1;
+	-webkit-transform: rotate(-80deg);
+	-webkit-animation: wingToUp 1.5s alternate infinite;	
+}
+.rightWing{
+	-webkit-transform: scaleX(-1) rotate(-80deg);
+	top: 32%;
+	left:51% ;
+	z-index: -1;
+	
+}
+.feather{
+	border-radius: 50%;
+	background-color: #8c633a;
+	position: absolute;
+}
+.feather1{
+	width: 100%;
+	height: 50%;
+}
+.feather2{
+	width: 80%;
+	height: 40%;
+	top: 30%; left: 15%;
+	-webkit-transform: rotate(-10deg);
+}
+.feather3{
+	width: 70%;
+	height: 40%;
+	top: 45%; left: 25%;
+	-webkit-transform: rotate(-20deg);	
+}
+
+@-webkit-keyframes wingToUp{
+	0%{-webkit-transform: rotate(-80deg); -webkit-transform-origin: 80%}
+	100%{-webkit-transform: rotate(0deg)}	
+}
+
+@-webkit-keyframes closeEyes{
+	0%{-webkit-transform: translateY(-200px)}
+	90%{-webkit-transform: translateY(-200px)}
+	100%{-webkit-transform: translateY(10px)}
+}
+
+
+
+
+
+
+	
+	
